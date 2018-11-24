@@ -66,6 +66,6 @@
     //final steps
 		$chipers = call_user_func_array('pack', array_merge(array('C*'),$chipertext)); //convert ASCII back to strings
 		return $chipers; // return value
-    //finish
+    //finishes
 	}
 ?>
