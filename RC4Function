@@ -42,7 +42,7 @@
 			$strkey[$initJ] = $temp;
 			$initT = ($strkey[$initI] + $strkey[$initJ]) % 256;
 			$K = $strkey[$initT];
-			$chipertext[$initIdx] = $K^=$ascPlains[$initIdx];
+			$chipertext[$initIdx] = $K^=$ascPlains[$initIdx];// XOR between K(key) with corresponding plaintexts index
 		}
 		//encriptions finishes here
 		
