@@ -7,9 +7,11 @@
 	$len = count($plainarr); //hitung panjang array
 	$len2 = count($keyarr); //hitung panjang array
 
-	for($i=$len2;$i < $len-$len2;$i++){ //proses padding key
-		for($j=1;$j < $len2;$j++){
-			array_push($keyarr, $keyarr[$j]);
+	if($len2 < $len){ // cek panjang key kurang dari plaintext
+		for($i=$len2;$i < $len-$len2;$i++){ //proses padding key
+			for($j=1;$j < $len2;$j++){
+				array_push($keyarr, $keyarr[$j]);
+			}
 		}
 	}
 
